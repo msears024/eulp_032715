@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <!-- <html class="no-js"> --> <!--<![endif]-->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<title>EventUpload.io: Event Marketing Made Simple</title>
+
+<!-- CSS  -->
+<link rel="stylesheet" href="{{ STATIC_URL }}css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection"/>
+
+<!-- href="{{ STATIC_URL }}css/style.css" -->
+<link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+    {% block content %}
+    {% endblock content %}
+    
+<footer class="page-footer teal">
+<div class="container">
+  <div class="row">
+    <div class="col l6 s12">
+      <h5 class="white-text"><u>Our Promise to You</u></h5>
+      <p class="grey-text text-lighten-4">Although we cannot guarantee that the sites to which we upload your content will always display it in a timely or correct manner (as we don't run their sites!), we promise that if you're disatisfied for any reason that we will refund your purchase in full.</p>
+
+
+    </div>
+    
+    <div class="col l3 s12">
+      <h5 class="white-text">Legal Stuff</h5>
+      <ul>
+        <li><a class="white-text" href="#!">Site Map</a></li>
+        <li><a class="white-text" href='{% url "privacy" %}'>Privacy Policy</a></li>
+        <li><a class="white-text" href='{% url "terms" %}'>Terms of Use</a></li>
+      </ul>
+    </div>
+
+    <div class="col l3 s12">
+      <h5 class="white-text">More</h5>
+      <ul>
+        <li><a class="white-text" href="#!">Contact Us</a></li>
+        <li><a class="white-text" href="#!">Blog</a></li>
+        <li><a class="white-text" href="#!">Meet the Team</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="footer-copyright">
+  <div class="container">
+  Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+  </div>
+</div>
+</footer>
+</body>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="{{ STATIC_URL }}js/materialize.js"></script>
+<script src="{{ STATIC_URL }}js/init.js"></script>
+
+</html>

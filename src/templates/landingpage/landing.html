@@ -1,0 +1,146 @@
+{% extends "landingpage/base.html" %}
+{% load staticfiles %}
+<!DOCTYPE html>
+
+{% block content %}
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">EventUpload.io</a>
+      
+      <ul class="right">
+        <li><a href="#AboutUs">Log in</a></li>
+      </ul>
+
+      <ul class="right">
+        <li><a href="#Pricing">Pricing</a></li>
+      </ul>
+
+      <ul class="right">
+        <li><a href="#AboutUs">About Us</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 id="h1txt" class="header center teal-text text-lighten-2">Event Marketing Made Simple</h1>
+        <div class="row center">
+          <h5 class="imgtxt" class="header col s12 light">Upload your event to all the major event calendars in three easy steps -- create an account, upload your event, click submit. We'll handle the rest!</h5>
+        </div>
+        <div class="row center">
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Upload for Free!</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src='{% static "images/color_run.jpg" %}' alt="Event Marketing"/></div>
+    <!-- https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:templatetag-staticfiles-static -->
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="mdi-image-flash-on"></i></h2>
+            <h5 class="center">Lightening Fast Event Marketing</h5>
+
+            <p class="light">We use our software and network to upload your event to tens and even hundreds of calendars in minutes rather than hours.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="mdi-social-group"></i></h2>
+            <h5 class="center">Reach New Customers</h5>
+
+            <p class="light">Your customers want to know about your event.  The problem is that they rely on different event calendars and applications.  We help solve this problem.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2>
+            <h5 class="center">A Complete User Experience</h5>
+
+            <p class="light">We provide a simple, intuitive interface that allows you to upload repeat events, images, multiple categories, media, and much more.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="imgtxt"  class="header col s12 light">Upload your event to all the major event calendars in three easy steps -- create an account, upload your event, click submit. We'll handle the rest!</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'images/glass-bar-cocktail.jpg' %}"  alt="Event Marketing Made Simple"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <a name="AboutUs"></a>
+          <h4>About Us</h4>
+          <p class="left-align light">
+        Event Upload was conceived in Salt Lake City, Utah -- principally from the <i>very</i> coffee shops and venues that we serve. 
+        We learned about the "event calendar" problem by trying to help local businesses market their upcoming events.  As we found, the problem isn't a lack of event calendars; it's that there are too many and no single site or app to ensure that <i>your</i> customers will discover <i>your</i> event.
+        Thus, we automated the event upload experience -- promising to increase the reach of every event we upload and helping to ensure that people know the events happing where they live.</p> 
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="imgtxt" class="header col s12 light">Reach More Customers in Less Time and with Less Effort.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'images/cheering.jpg' %}" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <a name="Pricing"></a>
+          <h4>Pricing</h4>
+          <p class="left-align light">
+          This is the pricing section.  One should not be able to "buy" from here.  Perhaps we should allow people to click an "Upload" button, from which we would begin our upload process; but the primary purpose of this section is that it allows us to <b><i>highlight and test</i></b> various service features.  It allows us to show all the cool stuff we're doing for them and to rapidly test prospective, new features.
+          </p> 
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+{% endblock %}
+</body>
+</html>
